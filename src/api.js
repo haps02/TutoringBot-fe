@@ -1,4 +1,4 @@
-const apiBase = process.env.BASE_URL;
+const apiBase = process.env.REACT_APP_BASE_URL;
 
 export async function connectToSession(userId, sessionId) {
   const res = await fetch(`${apiBase}/apps/multi_agent_tool/users/${userId}/sessions/${sessionId}`, {
